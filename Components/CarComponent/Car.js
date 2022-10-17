@@ -6,10 +6,10 @@ import BottomButton from '../BottomButtonComponent/BottomButton';
 
 
 const Car = (props) =>{
-   
-    const {name, tagline,taglineCTA, image} = props.car;
-    return(
-       <>
+  
+    const {car:{name, tagline,taglineCTA, image}} = props;
+    
+    return(       
         <View style={styles.container}>
             <ImageBackground style={styles.image} source={image}/>
             <View style={styles.title}>
@@ -24,9 +24,17 @@ const Car = (props) =>{
                 <BottomButton title={"Customer Order"} type={"primary"} />
                 <BottomButton title={"Customer Delivery "} type={"secondry"}/>
             </View>
-        </View>
-       </>
-        
+            
+             {/* <ImageBackground style={styles.image} source={image}/>
+             <View style={styles.title}>
+                <Text style={styles.Heading}>{name}</Text>
+                <Text style={styles.subHeading}>
+                    {tagline}{' '}
+                    <Text style={styles.subHeading__tagLineCTA}>{taglineCTA}</Text>
+                </Text>
+
+            </View> */}
+        </View>      
     );
 }
 
