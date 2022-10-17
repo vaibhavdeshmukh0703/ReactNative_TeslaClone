@@ -19,9 +19,9 @@ const styles = StyleSheet.create({
   },
   Heading: {
     fontSize: 30,
-    fontWeight: 700,
+    fontWeight: "bold",
     color: "black",
-    marginTop:'70px',
+    marginTop:130,
   },
   subHeading: {
     fontSize: 15,
