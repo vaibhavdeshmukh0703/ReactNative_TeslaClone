@@ -4,7 +4,7 @@ import Header from "./Components/HeaderComponent/Header";
 export default function App() {
   return (
     <View style={styles.container}>
-              <StatusBar />
+      <StatusBar styles='light'/>
       <Header />
       <CarList />
     </View>
